@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 2,
+  "type": "feroz-resultado",
+  "templateId": "historias-dia-de-grabacion",
+  "templateVersion": 1,
+  "screens": [
+    {
+      "id": "arranque",
+      "fields": [
+        { "id": "titular", "text": "EMPIEZA EL DÍA DE GRABACIÓN", "x": 80, "y": 1120, "width": 920 },
+        { "id": "apoyo", "text": "Café, guion impreso y la casa todavía en silencio.", "x": 80, "y": 1420, "width": 880 }
+      ]
+    },
+    {
+      "id": "montaje",
+      "fields": [
+        { "id": "titular", "text": "LUCES, CÁMARA Y CAFÉ", "x": 80, "y": 300, "width": 920, "style": { "highlight": "--action" } },
+        { "id": "apoyo", "text": "Así se ve la sala convertida en set.", "x": 80, "y": 560, "width": 880, "style": { "box": { "color": "--panel", "radius": 16 } } }
+      ]
+    },
+    {
+      "id": "grabando",
+      "fields": [
+        { "id": "titular", "text": "TOMA TRAS TOMA" },
+        { "id": "apoyo", "text": "Nadie ve las repeticiones, pero ahí está el trabajo." }
+      ]
+    },
+    {
+      "id": "lo-que-salio-mal",
+      "fields": [
+        { "id": "titular", "text": "LO QUE SALIÓ MAL" },
+        { "id": "apoyo", "text": "La luz cambió a media mañana y tocó repetir varias escenas.", "style": { "color": "#ffffff" } }
+      ]
+    },
+    {
+      "id": "resultado",
+      "fields": [
+        { "id": "titular", "text": "LO QUE SÍ SALIÓ" },
+        { "id": "apoyo", "text": "Material listo para las próximas semanas." }
+      ]
+    },
+    {
+      "id": "cierre",
+      "fields": [
+        { "id": "titular", "text": "¿QUIERES VER CÓMO QUEDÓ?" },
+        { "id": "apoyo", "text": "Mañana te enseño el primero." }
+      ]
+    }
+  ]
+}

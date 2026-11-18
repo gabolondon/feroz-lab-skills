@@ -1,0 +1,427 @@
+Usa la skill feroz-historias-carruseles para escribir y ubicar los textos de esta secuencia.
+Mira la imagen adjunta hoja-de-contacto.png: muestra cada pantalla numerada con su ID, la foto en su posición actual, los textos actuales y una cuadrícula cada 10 %.
+
+Plantilla: Día de grabación (secuencia de historias, 1080×1920 px, 6 pantallas).
+Instrucciones de la plantilla: Fotos del detrás de cámaras, sin filtro.
+
+Borrador actual. Las coordenadas están en píxeles del cuadro: x e y son la esquina superior izquierda de cada texto y width es su ancho. Los colores son tokens de Feroz (--fg, --accent2…) o hex. En style, highlight es un marcador por renglón detrás de las palabras y box es un recuadro sólido detrás de todo el texto ({ color, radius de 0 a 64 } o null); se pueden usar los dos.
+```json
+{
+  "templateId": "historias-dia-de-grabacion",
+  "templateVersion": 1,
+  "name": "Día de grabación",
+  "kind": "historias",
+  "width": 1080,
+  "height": 1920,
+  "instructions": "Fotos del detrás de cámaras, sin filtro.",
+  "screens": [
+    {
+      "number": 1,
+      "id": "arranque",
+      "role": "Arranque",
+      "imageGuide": "[borrador] Foto para «Arranque»",
+      "sticker": null,
+      "fields": [
+        {
+          "id": "rol",
+          "label": "Rol",
+          "guide": "[borrador] Nombre corto de la pantalla, en mayúsculas.",
+          "maxChars": 24,
+          "text": "ARRANQUE",
+          "x": 80,
+          "y": 120,
+          "width": 920,
+          "style": {
+            "font": "mono",
+            "fontSize": 38,
+            "color": "--accent2",
+            "highlight": null,
+            "bold": false,
+            "italic": false
+          }
+        },
+        {
+          "id": "titular",
+          "label": "Titular",
+          "guide": "[borrador] «Arranque»: titular corto y directo. Fotos del detrás de cámaras, sin filtro.",
+          "maxChars": 48,
+          "text": "",
+          "x": 80,
+          "y": 1114,
+          "width": 920,
+          "style": {
+            "font": "display",
+            "fontSize": 96,
+            "color": "--fg",
+            "highlight": null,
+            "bold": true,
+            "italic": false
+          }
+        },
+        {
+          "id": "apoyo",
+          "label": "Texto de apoyo",
+          "guide": "[borrador] Una frase que complete «Arranque».",
+          "maxChars": 110,
+          "text": "",
+          "x": 80,
+          "y": 1414,
+          "width": 880,
+          "style": {
+            "font": "text",
+            "fontSize": 48,
+            "color": "--fg",
+            "highlight": null,
+            "bold": false,
+            "italic": false
+          }
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "id": "montaje",
+      "role": "Montaje",
+      "imageGuide": "[borrador] Foto para «Montaje»",
+      "sticker": null,
+      "fields": [
+        {
+          "id": "rol",
+          "label": "Rol",
+          "guide": "[borrador] Nombre corto de la pantalla, en mayúsculas.",
+          "maxChars": 24,
+          "text": "MONTAJE",
+          "x": 80,
+          "y": 120,
+          "width": 920,
+          "style": {
+            "font": "mono",
+            "fontSize": 38,
+            "color": "--accent2",
+            "highlight": null,
+            "bold": false,
+            "italic": false
+          }
+        },
+        {
+          "id": "titular",
+          "label": "Titular",
+          "guide": "[borrador] «Montaje»: titular corto y directo. Fotos del detrás de cámaras, sin filtro.",
+          "maxChars": 48,
+          "text": "",
+          "x": 80,
+          "y": 1114,
+          "width": 920,
+          "style": {
+            "font": "display",
+            "fontSize": 96,
+            "color": "--fg",
+            "highlight": null,
+            "bold": true,
+            "italic": false
+          }
+        },
+        {
+          "id": "apoyo",
+          "label": "Texto de apoyo",
+          "guide": "[borrador] Una frase que complete «Montaje».",
+          "maxChars": 110,
+          "text": "",
+          "x": 80,
+          "y": 1414,
+          "width": 880,
+          "style": {
+            "font": "text",
+            "fontSize": 48,
+            "color": "--fg",
+            "highlight": null,
+            "bold": false,
+            "italic": false
+          }
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "id": "grabando",
+      "role": "Grabando",
+      "imageGuide": "[borrador] Foto para «Grabando»",
+      "sticker": null,
+      "fields": [
+        {
+          "id": "rol",
+          "label": "Rol",
+          "guide": "[borrador] Nombre corto de la pantalla, en mayúsculas.",
+          "maxChars": 24,
+          "text": "GRABANDO",
+          "x": 80,
+          "y": 120,
+          "width": 920,
+          "style": {
+            "font": "mono",
+            "fontSize": 38,
+            "color": "--accent2",
+            "highlight": null,
+            "bold": false,
+            "italic": false
+          }
+        },
+        {
+          "id": "titular",
+          "label": "Titular",
+          "guide": "[borrador] «Grabando»: titular corto y directo. Fotos del detrás de cámaras, sin filtro.",
+          "maxChars": 48,
+          "text": "",
+          "x": 80,
+          "y": 1114,
+          "width": 920,
+          "style": {
+            "font": "display",
+            "fontSize": 96,
+            "color": "--fg",
+            "highlight": null,
+            "bold": true,
+            "italic": false
+          }
+        },
+        {
+          "id": "apoyo",
+          "label": "Texto de apoyo",
+          "guide": "[borrador] Una frase que complete «Grabando».",
+          "maxChars": 110,
+          "text": "",
+          "x": 80,
+          "y": 1414,
+          "width": 880,
+          "style": {
+            "font": "text",
+            "fontSize": 48,
+            "color": "--fg",
+            "highlight": null,
+            "bold": false,
+            "italic": false
+          }
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "id": "lo-que-salio-mal",
+      "role": "Lo que salió mal",
+      "imageGuide": "[borrador] Foto para «Lo que salió mal»",
+      "sticker": null,
+      "fields": [
+        {
+          "id": "rol",
+          "label": "Rol",
+          "guide": "[borrador] Nombre corto de la pantalla, en mayúsculas.",
+          "maxChars": 24,
+          "text": "LO QUE SALIÓ MAL",
+          "x": 80,
+          "y": 120,
+          "width": 920,
+          "style": {
+            "font": "mono",
+            "fontSize": 38,
+            "color": "--accent2",
+            "highlight": null,
+            "bold": false,
+            "italic": false
+          }
+        },
+        {
+          "id": "titular",
+          "label": "Titular",
+          "guide": "[borrador] «Lo que salió mal»: titular corto y directo. Fotos del detrás de cámaras, sin filtro.",
+          "maxChars": 48,
+          "text": "",
+          "x": 80,
+          "y": 1114,
+          "width": 920,
+          "style": {
+            "font": "display",
+            "fontSize": 96,
+            "color": "--fg",
+            "highlight": null,
+            "bold": true,
+            "italic": false
+          }
+        },
+        {
+          "id": "apoyo",
+          "label": "Texto de apoyo",
+          "guide": "[borrador] Una frase que complete «Lo que salió mal».",
+          "maxChars": 110,
+          "text": "",
+          "x": 80,
+          "y": 1414,
+          "width": 880,
+          "style": {
+            "font": "text",
+            "fontSize": 48,
+            "color": "--fg",
+            "highlight": null,
+            "bold": false,
+            "italic": false
+          }
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "id": "resultado",
+      "role": "Resultado",
+      "imageGuide": "[borrador] Foto para «Resultado»",
+      "sticker": null,
+      "fields": [
+        {
+          "id": "rol",
+          "label": "Rol",
+          "guide": "[borrador] Nombre corto de la pantalla, en mayúsculas.",
+          "maxChars": 24,
+          "text": "RESULTADO",
+          "x": 80,
+          "y": 120,
+          "width": 920,
+          "style": {
+            "font": "mono",
+            "fontSize": 38,
+            "color": "--accent2",
+            "highlight": null,
+            "bold": false,
+            "italic": false
+          }
+        },
+        {
+          "id": "titular",
+          "label": "Titular",
+          "guide": "[borrador] «Resultado»: titular corto y directo. Fotos del detrás de cámaras, sin filtro.",
+          "maxChars": 48,
+          "text": "",
+          "x": 80,
+          "y": 1114,
+          "width": 920,
+          "style": {
+            "font": "display",
+            "fontSize": 96,
+            "color": "--fg",
+            "highlight": null,
+            "bold": true,
+            "italic": false
+          }
+        },
+        {
+          "id": "apoyo",
+          "label": "Texto de apoyo",
+          "guide": "[borrador] Una frase que complete «Resultado».",
+          "maxChars": 110,
+          "text": "",
+          "x": 80,
+          "y": 1414,
+          "width": 880,
+          "style": {
+            "font": "text",
+            "fontSize": 48,
+            "color": "--fg",
+            "highlight": null,
+            "bold": false,
+            "italic": false
+          }
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "id": "cierre",
+      "role": "Cierre",
+      "imageGuide": "[borrador] Foto para «Cierre»",
+      "sticker": null,
+      "fields": [
+        {
+          "id": "rol",
+          "label": "Rol",
+          "guide": "[borrador] Nombre corto de la pantalla, en mayúsculas.",
+          "maxChars": 24,
+          "text": "CIERRE",
+          "x": 80,
+          "y": 120,
+          "width": 920,
+          "style": {
+            "font": "mono",
+            "fontSize": 38,
+            "color": "--accent2",
+            "highlight": null,
+            "bold": false,
+            "italic": false
+          }
+        },
+        {
+          "id": "titular",
+          "label": "Titular",
+          "guide": "[borrador] «Cierre»: titular corto y directo. Fotos del detrás de cámaras, sin filtro.",
+          "maxChars": 48,
+          "text": "",
+          "x": 80,
+          "y": 1114,
+          "width": 920,
+          "style": {
+            "font": "display",
+            "fontSize": 96,
+            "color": "--fg",
+            "highlight": null,
+            "bold": true,
+            "italic": false
+          }
+        },
+        {
+          "id": "apoyo",
+          "label": "Texto de apoyo",
+          "guide": "[borrador] Una frase que complete «Cierre».",
+          "maxChars": 110,
+          "text": "",
+          "x": 80,
+          "y": 1414,
+          "width": 880,
+          "style": {
+            "font": "text",
+            "fontSize": 48,
+            "color": "--fg",
+            "highlight": null,
+            "bold": false,
+            "italic": false
+          }
+        }
+      ]
+    }
+  ]
+}
+```
+
+Devuelve solo un bloque JSON de tipo feroz-resultado, sin texto alrededor, con "templateId": "historias-dia-de-grabacion" y "templateVersion": 1 exactos. Incluye solo las pantallas y campos que cambies; lo que no incluyas se conserva. Si puedes crear archivos, entrégalo como resultado.json. Formato:
+```json
+{
+  "schemaVersion": 2,
+  "type": "feroz-resultado",
+  "templateId": "historias-dia-de-grabacion",
+  "templateVersion": 1,
+  "screens": [
+    {
+      "id": "arranque",
+      "fields": [
+        {
+          "id": "titular",
+          "text": "…",
+          "x": 80,
+          "y": 1100,
+          "width": 920,
+          "style": {
+            "color": "--fg"
+          }
+        }
+      ]
+    }
+  ]
+}
+```
+
+No inventes cifras, nombres ni testimonios. Si falta información para escribir un texto, pregúntame antes de devolver el resultado.

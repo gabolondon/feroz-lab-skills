@@ -7,17 +7,17 @@ Dos skills para trabajar con Feroz Content Lab desde Claude:
 
 ## Instalar en Claude Code
 
-Pega en Claude Code la instrucción que aparece en Feroz › Mi cuenta › Conectar con Claude Code. Si te la piden a mano: «Instala la skill de Feroz desde `<url de este repo>` y conéctala a `<url de Feroz>`».
+Pega en Claude Code la instrucción que aparece en Feroz › Mi cuenta › Conectar con Claude Code. Si te la piden a mano: «Instala la skill de Feroz desde https://github.com/gabolondon/feroz-lab-skills y conéctala a https://feroz-review.gabocodes.com».
 
 ### Pasos para Claude Code
 
 1. Descarga este repo en una carpeta temporal:
-   - con git: `git clone --depth 1 <url-del-repo> "<temporal>/feroz-skills"`;
-   - sin git: `curl -fsSL https://codeload.github.com/<org>/<repo>/tar.gz/refs/heads/main | tar -xz -C "<temporal>"` (la carpeta queda como `<repo>-main`).
+   - con git: `git clone --depth 1 https://github.com/gabolondon/feroz-lab-skills.git "<temporal>/feroz-skills"`;
+   - sin git: `curl -fsSL https://codeload.github.com/gabolondon/feroz-lab-skills/tar.gz/refs/heads/main | tar -xz -C "<temporal>"` (la carpeta queda como `feroz-lab-skills-main`).
 2. Por cada carpeta de la raíz que tenga un `SKILL.md`, cópiala a `~/.claude/skills/<nombre>/`. En Windows es `%USERPROFILE%\.claude\skills\<nombre>\` (desde Git Bash, `~/.claude/skills/` también funciona).
    - Si `~/.claude/skills/<nombre>/` ya existe, **pregunta antes de sobrescribirla**.
 3. Marca el script como ejecutable: `chmod +x ~/.claude/skills/feroz-laboratorio/scripts/feroz.sh`.
-4. Conecta la cuenta con la URL de Feroz que te dieron: sigue «Primera vez» de `feroz-laboratorio/SKILL.md` (el usuario corre `feroz.sh login --url <url>` y pega su clave, o la pega en el chat).
+4. Conecta la cuenta con la URL de Feroz (https://feroz-review.gabocodes.com, salvo que te den otra): sigue «Primera vez» de `feroz-laboratorio/SKILL.md` (el usuario corre `feroz.sh login --url https://feroz-review.gabocodes.com` y pega su clave, o la pega en el chat).
 5. Comprueba: `bash ~/.claude/skills/feroz-laboratorio/scripts/feroz.sh api GET /api/claude/me` responde con su correo.
 6. Borra la carpeta temporal y di qué quedó instalado y dónde. Puede hacer falta reiniciar Claude Code para que vea las skills nuevas.
 

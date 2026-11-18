@@ -29,10 +29,10 @@ Los archivos `@….json` escríbelos en una carpeta temporal, no en la carpeta d
 
 ## Primera vez (salida 3)
 
-1. Si el usuario aún no tiene clave: que entre a Feroz › **Mi cuenta** › **Conectar con Claude Code**, cree una clave (por ejemplo «Mi portátil») y la copie. La **Instrucción para Claude Code** de esa pantalla trae la URL de Feroz; si no la tienes, pídesela.
+1. Si el usuario aún no tiene clave: que entre a Feroz › **Mi cuenta** › **Conectar con Claude Code**, cree una clave (por ejemplo «Mi portátil») y la copie. La URL de Feroz es https://feroz-review.gabocodes.com (la misma que trae la **Instrucción para Claude Code** de esa pantalla); si el usuario te da otra, usa la suya.
 2. Ofrece dos caminos para guardarla:
-   - **En su terminal (recomendado):** que escriba en Claude Code `! bash ~/.claude/skills/feroz-laboratorio/scripts/feroz.sh login --url <url>` y pegue la clave cuando se la pida. Si así no le deja escribir, que lo corra en la app Terminal (o Git Bash en Windows) sin el `!`.
-   - **Pegándola en el chat:** corre tú `printf '%s' '<clave>' | bash ~/.claude/skills/feroz-laboratorio/scripts/feroz.sh login --url <url>`. Solo esa vez; después no la vuelvas a escribir.
+   - **En su terminal (recomendado):** que escriba en Claude Code `! bash ~/.claude/skills/feroz-laboratorio/scripts/feroz.sh login --url https://feroz-review.gabocodes.com` y pegue la clave cuando se la pida. Si así no le deja escribir, que lo corra en la app Terminal (o Git Bash en Windows) sin el `!`.
+   - **Pegándola en el chat:** corre tú `printf '%s' '<clave>' | bash ~/.claude/skills/feroz-laboratorio/scripts/feroz.sh login --url https://feroz-review.gabocodes.com`. Solo esa vez; después no la vuelvas a escribir.
 3. Debe responder `Conectado como <email>.` La clave queda en el llavero del sistema (Llavero en macOS, cifrada con la cuenta en Windows, `secret-tool` en Linux).
 4. En Linux, si `feroz.sh` avisa que la guardó en un archivo, recomienda `sudo apt install libsecret-tools` y repetir el login.
 
